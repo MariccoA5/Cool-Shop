@@ -1,4 +1,4 @@
-HTML/CSS/JS and Django
+HTML/CSS and Django
 - **E-commerce Business**
 
 ## Requirements
