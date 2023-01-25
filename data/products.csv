@@ -1,0 +1,13 @@
+id,name,category,store,image_url,cost
+1,mittens,cat,petstore,cat.png,60
+2,leash,accessories,petstore,leash.png,2
+3,yarn,accessories,petstore,yarn-ball.svg,4
+4,ball,accessories,petstore,ball.png,4
+5,shotgun,gun,gunstore,shotgun.png,200
+6,shotgun shells,ammo,gunstore,bullet.png,20
+7,target, accessories,gunstore,target.png,2
+8,m4,gun,gunstore,rifle.png,400
+9,bananas,fruit,grocerystore,bananas.png,1
+10,cheese,dairy,grocerystore,cheese.png,5
+11,chicken,protien,grocerystore,chicken.png,7
+12,rice,carb,grocerystore,rice.png,3

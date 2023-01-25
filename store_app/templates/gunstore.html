@@ -1,0 +1,21 @@
+{% extends 'template.html' %} {% block content %}
+
+
+<div class="container">
+  <h3>Gun Store</h3>
+
+{% for i in products %}
+  {% if i.store == 'gunstore' %}
+<div class="card d-inline-block" style="width: 18rem">
+  <div class="card-body justify-content-center">
+    <h5 class="card-title">{{i.name|title}}</h5>
+    <img src="../static/{{i.image_url}}" width="200px" height="200px"/>
+    <p class="card-text">Store: {{i.store|title}}<br>Category: {{i.category|title}}<br>Cost: ${{i.cost}}<br></p>
+    <a href="#" onclick="add2Cart({{i.id}})" class="btn btn-dark"
+      >Add to cart</a
+    >
+  </div>
+</div>
+  {% endif %} {% endfor %}
+</div>
+{% endblock %}

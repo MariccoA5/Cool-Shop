@@ -1,0 +1,20 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<div class="container">
+  <h3>Cart</h3>
+
+
+  {% for i in items_in_cart %} 
+    <div class="card d-inline-block" style="width: 18rem">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title">{{i.name|title}}</h5>
+        <img src="../static/{{i.image_url}}" width="100px" height="100px"/>
+        <p class="card-text">Store: {{i.store|title}}<br>Category: {{i.category|title}}<br>Cost: ${{i.cost}}<br></p>
+        <h5>Quanity: 1</h5>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="container"><h3>Total: ${{ total }}</h3></div>
+</div>
+{% endblock %}
